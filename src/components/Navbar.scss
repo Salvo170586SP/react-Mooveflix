@@ -1,0 +1,30 @@
+header{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    z-index: 3;
+     
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        h3{
+           color: red;
+           font-weight: bold;
+           font-size: 2rem;
+        }
+        ul{
+            font-size: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            li{
+                margin: 0 30px;
+                 font-weight: bold;
+            }
+        }
+    }
+}
