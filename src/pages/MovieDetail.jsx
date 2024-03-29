@@ -47,7 +47,7 @@ const MovieDetail = () => {
             <span className="itemText">
               Lingua orginale: {movieDetail?.original_language}
             </span>
-            <p className="itemText">{movieDetail?.overview}</p>
+            <p className="itemText uppercase">{movieDetail?.overview}</p>
           </div>
         </div>
       </div>

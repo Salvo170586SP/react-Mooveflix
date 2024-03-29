@@ -12,7 +12,7 @@ const Navabr = () => {
               <Link to={"/"}>HOME</Link>
             </li>
             <li>
-              <Link to={"/chi-siamo"}>CHI SIAMO</Link>
+              <Link to={"/chi-siamo"}>ABOUT</Link>
             </li>
           </ul>
         </nav>
