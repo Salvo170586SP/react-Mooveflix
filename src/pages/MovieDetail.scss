@@ -1,0 +1,70 @@
+.movie-detail {
+  background-image: url("../assets/imgs/sfondo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aqua;
+  z-index: 3;
+  position: relative;
+  padding: 100px 50px;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  .overlay-sfondo {
+    position: absolute;
+    background-color: #000000d8;
+    max-width: 100vw;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -30;
+  }
+
+  #cardDetail {
+    display: flex;
+    padding: 50px;
+
+    figure {
+      width: 900px;
+      img {
+        max-width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+    }
+
+    .boxText {
+      padding: 10px 20px;
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
+      h3 {
+        font-size: 2.5rem;
+      }
+
+      .itemText {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    #cardDetail {
+      flex-direction: column;
+      padding: 50px 30px;
+
+      figure {
+        width: 100%;
+        img {
+          width: 100%;
+          border-radius: 10px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

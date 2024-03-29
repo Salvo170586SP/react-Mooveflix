@@ -4,7 +4,7 @@ header{
     color: white;
     padding: 20px 0;
     position: fixed;
-    z-index: 3;
+    z-index: 10;
      
     nav{
         display: flex;
@@ -24,6 +24,11 @@ header{
             li{
                 margin: 0 30px;
                  font-weight: bold;
+
+                 a{
+                    color: yellow;
+                    text-decoration-line: none;
+                 }
             }
         }
     }

@@ -1,9 +1,9 @@
+import { Link } from "react-router-dom";
 import "./Card.scss";
 
 const Card = (props) => {
   return (
-    <>
-      <div className="card" tabIndex="0">
+      <div className="card" tabIndex="0" key={props.id}>
         <div className="overlay"></div>
         <figure>
           {props.poster_path ? (
@@ -20,13 +20,13 @@ const Card = (props) => {
           )}
         </figure>
         <div className="body-text">
-          <button className="scopri">Scopri di più</button>
+          <Link to={`/movies/${props.id}`} className="scopri">Scopri di più</Link>
           <h2>{props.title}</h2>
           <span className="actors">Trama:{props.overview}</span>
           <span className="year">Year:{props.release_date}</span>
         </div>
       </div>
-    </>
+   
   );
 };
 

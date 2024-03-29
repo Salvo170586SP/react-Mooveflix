@@ -1,3 +1,64 @@
-/* #app {
-  padding: 250px;
-} */
+#movies {
+  background-image: url("./assets/imgs/sfondo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px;
+  min-height: 100vh;
+  position: relative;
+
+  .overlay-sfondo {
+    position: absolute;
+    background-color: #000000d8;
+    max-width: 100vw;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -0;
+  }
+
+  #carousel {
+    min-height: 350px;
+     min-width: 90%;
+   
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+       }
+  
+  }
+
+  .input-box {
+    z-index: 2;
+    input {
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+
+      &:focus-visible {
+        border: 0;
+        outline: 0px;
+      }
+    }
+  }
+
+  .loader {
+    z-index: 10;
+    color: red;
+    font-size: 2rem;
+    margin-top: 50px;
+  }
+
+  .box-movies {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
