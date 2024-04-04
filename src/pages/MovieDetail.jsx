@@ -1,21 +1,22 @@
 import "./MovieDetail.scss";
 import Navabr from "../components/Navbar";
 import { useParams } from "react-router-dom";
-import { useSelector } from "react-redux";
-    
+import { useDispatch, useSelector } from "react-redux";
+import { fetchMovie } from "../redux/moviesSlice";
+import { useEffect } from "react";
+
 const MovieDetail = () => {
   const { movieID } = useParams();
- 
+  const dispatch = useDispatch();
   const movies = useSelector((state) => state.movies.value);
 
   const movieDetail = movies.results?.filter(
     (item) => item.id == movieID.toString()
   )[0];
 
-
- 
- 
-  console.log(movieDetail);
+  useEffect(() => {
+    dispatch(fetchMovie(""));
+  }, [dispatch]);
 
   return (
     <>

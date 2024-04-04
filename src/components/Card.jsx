@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import "./Card.scss";
 
 const Card = (props) => {
-  return (
+
+   return (
     <div className="card" tabIndex="0" key={props.id}>
       <div className="overlay"></div>
       <figure>
