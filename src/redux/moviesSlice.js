@@ -4,11 +4,16 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 export const fetchMovie = createAsyncThunk('fetchMovie', async (query) => {
     const all = `https://api.themoviedb.org/3/trending/movie/day?`;
     const uriSearch = `https://api.themoviedb.org/3/search/movie?query=${query}&`;
-    const url =  query == '' ?  all : uriSearch   ;
+    const url = query == '' ? all : uriSearch;
     const apiKey = '52506c224db8dc42f817a52dcdd3da51'
     const urlFull = `${url}api_key=${apiKey}`
     const response = await fetch(urlFull);
-    return response.json();
+    const data = await response.json();
+
+    // Memorizza i nuovi dati nel local storage, sovrascrivendo i precedenti
+    localStorage.setItem('movies', JSON.stringify(data));
+
+    return data;
 });
 
 
@@ -17,7 +22,7 @@ const moviesSlice = createSlice({
     name: "movies",
     initialState: {
         isLoading: false,
-        value: [],
+        value: JSON.parse(localStorage.getItem('movies')) || [],
         isError: false
     },
     extraReducers: (builder) => {
@@ -36,6 +41,5 @@ const moviesSlice = createSlice({
 
 });
 
-export const { addMovie } = moviesSlice.actions
 
 export const moviesReducer = moviesSlice.reducer
