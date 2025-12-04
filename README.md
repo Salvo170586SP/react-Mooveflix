@@ -1,8 +1,40 @@
-# React + Vite
+# Simulazione Galleria Del Cinema - React Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un progetto dimostrativo realizzato interamente con **React** per simulare un sito web di un motore di ricerca per Film.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💡 Panoramica del Progetto
+
+Questo repository contiene il codice sorgente per un'applicazione web sviluppata a scopo didattico e dimostrativo. L'obiettivo principale è mostrare le capacità di **React** nella gestione dello stato, del routing e della composizione di componenti per creare un'esperienza utente dinamica.
+
+### Funzionalità Principali
+* **Raccolta Film dinamico:** Visualizzazione di un elenco di film con dettagli, e con ricerca.
+* **Dettagli Prodotto:** Ogni film è navigabile per visualizzare i dettagli specifici.
+* **Sezioni Istituzionali:** Pagine statiche come "Chi Siamo" e "Contatti".
+ 
+---
+
+## 🛠️ Tecnologie Utilizzate
+
+* **React:**  
+* **[React Router Dom] (o altra libreria di routing specifica):** 
+* **JavaScript (ES6+):** 
+
+---
+
+## 🚀 Guida all'Avvio
+
+Segui questi passaggi per clonare il progetto e avviarlo in locale.
+
+### Prerequisiti
+
+Assicurati di avere installato **Node.js** e **npm** (Node Package Manager).
+
+### 1. Clonazione del Repository
+
+Apri il tuo terminale e clona il repository:
+
+```bash
+git clone [https://github.com/IL_TUO_USERNAME/NOME_DEL_PROGETTO.git](https://github.com/IL_TUO_USERNAME/NOME_DEL_PROGETTO.git)
+cd NOME_DEL_PROGETTO
